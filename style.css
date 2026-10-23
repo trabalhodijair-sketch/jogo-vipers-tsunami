@@ -1,0 +1,26 @@
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{height:100%;margin:0;background:#12081f;color:#fff;font-family:'Luckiest Guy',Impact,'Arial Black',sans-serif;-webkit-user-select:none;user-select:none;touch-action:manipulation}
+body{display:flex;align-items:center;justify-content:center}
+#wrap{position:relative;width:min(100vw,900px);aspect-ratio:2/1;background:#1d0f2e;overflow:hidden;border-radius:12px}
+canvas{width:100%;height:100%;display:block}
+
+#ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:rgba(18,8,31,.78);text-align:center;padding:12px}
+#ov.hide{display:none}
+.sc{display:flex;flex-direction:column;align-items:center;gap:10px}
+.sc[hidden]{display:none}
+
+h1{margin:0;font-weight:400;font-size:clamp(28px,7vw,64px);color:#9be53d;letter-spacing:1px;text-shadow:0 4px 0 #2d5a0e}
+p{margin:0;font-family:system-ui,sans-serif;font-weight:600;font-size:clamp(12px,2.2vw,18px);color:#e9dcff;max-width:38ch;line-height:1.35}
+
+button{font:inherit;font-size:clamp(18px,3.5vw,30px);padding:.35em 1.3em;border:0;border-radius:999px;background:#ff5d8f;color:#fff;cursor:pointer;box-shadow:0 5px 0 #a82a58}
+button:active{transform:translateY(3px);box-shadow:0 2px 0 #a82a58}
+button:focus-visible{outline:3px solid #ffd04a;outline-offset:3px}
+button.alt{background:#4b2a73;box-shadow:0 5px 0 #2a1646;font-size:clamp(14px,2.6vw,22px)}
+button.alt:active{box-shadow:0 2px 0 #2a1646}
+
+#skill{position:absolute;right:12px;bottom:12px;font-size:clamp(12px,2.4vw,20px);background:#ffd04a;color:#1d0f2e;box-shadow:0 4px 0 #a07a10;animation:pulse 1s infinite}
+@keyframes pulse{50%{scale:1.07}}
+
+label{display:flex;gap:10px;align-items:center;font-size:clamp(14px,2.6vw,22px)}
+input[type=range]{width:min(40vw,240px);accent-color:#9be53d}
+input[type=checkbox]{width:20px;height:20px;accent-color:#9be53d}

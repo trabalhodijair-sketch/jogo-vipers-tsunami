@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tsunami Zumbi</title>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" width="900" height="450"></canvas>
+  <button id="skill" hidden></button>
+
+  <div id="ov">
+    <div class="sc" id="s-menu">
+      <h1>TSUNAMI ZUMBI</h1>
+      <p>Pular: toque, clique ou espaço (pulo duplo!). Habilidade: botão ⚡ ou tecla E. A cada 35 humanos devorados você libera um poder novo!</p>
+      <button id="b-play">Jogar</button>
+      <button id="b-set" class="alt">Configurações</button>
+      <button id="b-exit" class="alt">Sair</button>
+    </div>
+    <div class="sc" id="s-set" hidden>
+      <h1>Configurações</h1>
+      <label>Música <input type="range" id="r-m" min="0" max="100"></label>
+      <label>Efeitos <input type="range" id="r-s" min="0" max="100"></label>
+      <label><input type="checkbox" id="c-mute"> Silenciar tudo</label>
+      <button id="b-back">Voltar</button>
+    </div>
+    <div class="sc" id="s-over" hidden>
+      <h1>A HORDA CAIU</h1>
+      <p id="d-over"></p>
+      <button id="b-again">Jogar de novo</button>
+      <button id="b-menu" class="alt">Menu</button>
+    </div>
+    <div class="sc" id="s-bye" hidden>
+      <h1>Até logo!</h1>
+      <p>Obrigado por jogar. Você já pode fechar esta aba.</p>
+      <button id="b-hello">Voltar ao menu</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
